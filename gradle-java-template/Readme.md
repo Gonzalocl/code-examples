@@ -17,3 +17,6 @@ If IntelliJ does not autmatically detects Java 17:
 File > Project Structure > Project Settings > Project > Project SDK: 17
 File > Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JVM: Project SDK 17
 
+Or set default SDK for new projects:
+File > New Projects Setup > Structure > Project Settings > Project > Project SDK: 17
+
