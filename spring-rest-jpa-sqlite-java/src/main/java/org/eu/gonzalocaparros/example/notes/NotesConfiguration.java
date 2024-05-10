@@ -2,6 +2,9 @@ package org.eu.gonzalocaparros.example.notes;
 
 import org.eu.gonzalocaparros.example.notes.domain.controller.NoteController;
 import org.eu.gonzalocaparros.example.notes.domain.repository.NoteRepository;
+import org.eu.gonzalocaparros.example.notes.io.repository.SqliteNoteRepository;
+import org.eu.gonzalocaparros.example.notes.io.repository.jpa.NoteJpaRepository;
+import org.eu.gonzalocaparros.example.notes.io.repository.mapper.NoteEntityMapper;
 import org.eu.gonzalocaparros.example.notes.io.rest.handler.NoteHandler;
 import org.eu.gonzalocaparros.example.notes.io.rest.mapper.NoteMapper;
 import org.springframework.context.annotation.Bean;
@@ -16,8 +19,8 @@ public class NotesConfiguration {
     }
 
     @Bean
-    public NoteRepository noteRepository() {
-        return null;
+    public NoteRepository noteRepository(NoteJpaRepository noteJpaRepository, NoteEntityMapper noteEntityMapper) {
+        return new SqliteNoteRepository(noteJpaRepository, noteEntityMapper);
     }
 
     @Bean
