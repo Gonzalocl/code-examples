@@ -1,3 +1,1 @@
-
-rootProject.name = "kotlin-sqlite-sqldelight-jvm"
-
+rootProject.name = "example"

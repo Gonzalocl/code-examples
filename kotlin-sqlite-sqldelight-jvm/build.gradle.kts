@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.10"
+    kotlin("jvm") version "1.9.23"
 }
 
 group = "org.eu.gonzalocaparros"
@@ -15,10 +15,10 @@ dependencies {
     testImplementation(kotlin("test"))
 }
 
-tasks.test {
+tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-tasks.withType<KotlinCompile>() {
-    kotlinOptions.jvmTarget = "11"
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "17"
 }
