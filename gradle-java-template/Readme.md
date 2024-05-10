@@ -19,4 +19,3 @@ File > Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle J
 
 Or set default SDK for new projects:
 File > New Projects Setup > Structure > Project Settings > Project > Project SDK: 17
-
