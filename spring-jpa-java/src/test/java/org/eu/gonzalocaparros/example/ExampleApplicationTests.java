@@ -1,10 +1,10 @@
-package org.eu.gonzalocaparros.springjpajava;
+package org.eu.gonzalocaparros.example;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringJpaJavaApplicationTests {
+class ExampleApplicationTests {
 
     @Test
     void contextLoads() {

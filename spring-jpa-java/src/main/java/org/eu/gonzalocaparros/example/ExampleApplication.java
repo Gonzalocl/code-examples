@@ -1,4 +1,4 @@
-package org.eu.gonzalocaparros.springjpajava;
+package org.eu.gonzalocaparros.example;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,19 +10,19 @@ import org.springframework.context.annotation.Bean;
 import java.util.List;
 
 @SpringBootApplication
-public class SpringJpaJavaApplication {
+public class ExampleApplication {
 
-    private static final Logger log = LoggerFactory.getLogger(SpringJpaJavaApplication.class);
+    private static final Logger log = LoggerFactory.getLogger(ExampleApplication.class);
 
     private final NoteRepository noteRepository;
 
-    public SpringJpaJavaApplication(NoteRepository noteRepository) {
+    public ExampleApplication(NoteRepository noteRepository) {
         this.noteRepository = noteRepository;
 
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringJpaJavaApplication.class, args);
+        SpringApplication.run(ExampleApplication.class, args);
 
     }
 

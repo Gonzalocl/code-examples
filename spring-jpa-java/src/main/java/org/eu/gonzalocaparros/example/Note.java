@@ -1,4 +1,4 @@
-package org.eu.gonzalocaparros.springjpajava;
+package org.eu.gonzalocaparros.example;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

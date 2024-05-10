@@ -1,4 +1,4 @@
-package org.eu.gonzalocaparros.springjpajava;
+package org.eu.gonzalocaparros.example;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
