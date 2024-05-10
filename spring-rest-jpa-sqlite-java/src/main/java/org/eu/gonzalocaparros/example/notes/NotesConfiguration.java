@@ -2,7 +2,6 @@ package org.eu.gonzalocaparros.example.notes;
 
 import org.eu.gonzalocaparros.example.notes.domain.controller.NoteController;
 import org.eu.gonzalocaparros.example.notes.domain.repository.NoteRepository;
-import org.eu.gonzalocaparros.example.notes.io.repository.InMemoryNoteRepository;
 import org.eu.gonzalocaparros.example.notes.io.rest.handler.NoteHandler;
 import org.eu.gonzalocaparros.example.notes.io.rest.mapper.NoteMapper;
 import org.springframework.context.annotation.Bean;
@@ -18,7 +17,7 @@ public class NotesConfiguration {
 
     @Bean
     public NoteRepository noteRepository() {
-        return new InMemoryNoteRepository();
+        return null;
     }
 
     @Bean
