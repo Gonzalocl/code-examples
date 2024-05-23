@@ -1,0 +1,17 @@
+
+CREATE TABLE map (
+  id INTEGER PRIMARY KEY NOT NULL,
+  name TEXT NOT NULL
+);
+
+selectAll:
+SELECT *
+FROM map;
+
+insert:
+INSERT INTO map(id, name)
+VALUES (?, ?);
+
+insertFullMapObject:
+INSERT INTO map(id, name)
+VALUES ?;
