@@ -1,0 +1,16 @@
+
+selectAll:
+SELECT *
+FROM map;
+
+insert:
+INSERT INTO map(id, name, description)
+VALUES ?;
+
+insertName:
+INSERT INTO map(id, name)
+VALUES (?, ?);
+
+insertDescription:
+INSERT INTO map(id, description)
+VALUES (?, ?);
