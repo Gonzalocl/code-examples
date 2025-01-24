@@ -1,4 +1,4 @@
-package org.eu.gonzalocaparros.gradle_java_template;
+package ${package};
 
 public class Main {
 

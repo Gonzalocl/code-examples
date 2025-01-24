@@ -2,8 +2,8 @@ plugins {
     application
 }
 
-group = "org.eu.gonzalocaparros"
-version = "0.1"
+group = "${group_id}"
+version = "${version}"
 
 java {
     targetCompatibility = JavaVersion.VERSION_17
@@ -24,7 +24,7 @@ tasks.test {
 }
 
 application {
-    mainClass = "org.eu.gonzalocaparros.gradle_java_template.Main"
+    mainClass = "${package}.Main"
 }
 
 tasks.jar {

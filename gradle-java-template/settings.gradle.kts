@@ -1,1 +1,1 @@
-rootProject.name = "gradle-java-template"
+rootProject.name = "${artifact_id}"
