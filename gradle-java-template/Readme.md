@@ -1,21 +1,9 @@
-Gradle
-  Project SDK: 17
-  Additional Libraries and Frameworks: Java
-Next
-  Name: gradle-java-template
-  GroupId: org.eu.gonzalocaparros
-  ArtifactId: gradle-java-template
-  Version: 0.1
-Add .gitignore
-Add Java version and update gradle
-Add Main class
-Add Readme.md
+# gradle-java-template
 
-Change ArtifactId in settings.gradle.
+Run without compile: `./gradlew run`
 
-If IntelliJ does not autmatically detects Java 17:
-File > Project Structure > Project Settings > Project > Project SDK: 17
-File > Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JVM: Project SDK 17
+Build: `./gradlew assembleDist`
 
-Or set default SDK for new projects:
-File > New Projects Setup > Structure > Project Settings > Project > Project SDK: 17
+Jar located at: `build/libs`
+
+Run jar: `java -jar build/libs/gradle-java-template-*.jar`
